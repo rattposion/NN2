@@ -1,0 +1,11 @@
+# Dockerfile funcional para n8n (Railway)
+FROM n8nio/n8n:latest
+
+# Definir diretório de trabalho
+WORKDIR /home/node/.n8n
+
+# Expor porta
+EXPOSE 5678
+
+# Comando de inicialização
+CMD ["n8n", "start"] 
